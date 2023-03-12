@@ -18,7 +18,7 @@
     width: 70vw;
 }
 
-.bayan__title {
+.bayan__title-h1 {
     font-size: 2.5rem;
     margin: 4vh auto 1vh;
     text-align: center;
@@ -29,14 +29,14 @@
     margin-top: 1em;
     padding: 1em 1em;
 
-    border: 1px solid #000;
+    border: 1px solid #4c3a70;
 }
 
 .bayan-item__input{
     display: none;
 }
 
-.bayan__item-title{
+.bayan-item__title{
     font-size: 1.3rem;
 }
 
