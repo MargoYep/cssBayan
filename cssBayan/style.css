@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 101vh;
+    width: 70vw;
+}
+
+.bayan__title {
+    font-size: 2.5rem;
+    margin: 4vh auto 1vh;
+    text-align: center;
+}
+
+.bayan-item {
+    cursor: pointer;
+    margin-top: 1em;
+    padding: 1em 1em;
+
+    border: 1px solid #000;
+}
+
+.bayan-item__input{
+    display: none;
+}
+
+.bayan__item-title{
+    font-size: 1.3rem;
+}
+
+.bayan-item__icon {
+    width: 2em;
+    height: 2em;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.bayan-item__input:checked + .bayan-item__btn .bayan-item__icon {
+    transform: rotate(90deg);
+
+}
+
+.bayan-item__input:hover + .bayan-item__btn .bayan-item__icon {
+    transform: rotate(90deg);
+
+}
+
+.bayan-item__btn {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.bayan-item__mem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.bayan-item__mem-img {
+    height: 25em;
+    width: 100%;
+    object-fit: contain;
+
+    margin-top: 2em;
+}
+
+.bayan-item__input:checked ~ .bayan-item__mem {
+    height: 25em;
+}
+
+.bayan-item__input:hover ~ .bayan-item__mem {
+    height: 25em;
+}
+
